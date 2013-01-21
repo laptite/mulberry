@@ -1,6 +1,7 @@
 dojo.provide('mulberry.app._base');
 
 dojo.require('mulberry.app.Analytics');
+dojo.require('mulberry.app.Omniture');
 dojo.require('mulberry.app.URL');
 dojo.require('mulberry.app.PhoneGap');
 dojo.require('mulberry.app.DeviceStorage');

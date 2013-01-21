@@ -2,6 +2,7 @@ dojo.provide('mulberry.app.PhoneGap');
 
 dojo.require('mulberry.Device');
 dojo.require('mulberry.app.PhoneGap.analytics');
+dojo.require('mulberry.app.PhoneGap.omniture');
 dojo.require('mulberry.app.PhoneGap.notification');
 dojo.require('mulberry.app.PhoneGap.device');
 dojo.require('mulberry.app.PhoneGap.network');
@@ -26,6 +27,7 @@ dojo.require('mulberry.app.PhoneGap.admob');
 
   var builtInAPIs = [
     'analytics',
+    'omniture',
     'notification',
     'device',
     'network',

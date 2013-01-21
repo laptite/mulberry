@@ -5,6 +5,7 @@ dojo.require('dojo.Stateful');
 dojo.require('toura.components.SiblingNav');
 dojo.require('toura.components.AdTag');
 dojo.require('toura.AdMob');
+dojo.require('toura.Omniture');
 
 (function(m) {
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189C5AC116AD55D400982B6B /* admsAppLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 189C5AC016AD55D400982B6B /* admsAppLibrary.a */; };
 		18E7725B167738C6006F282A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E77255167738AE006F282A /* libCordova.a */; };
 		645122FB154880FD00025F11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645122FA154880FD00025F11 /* Foundation.framework */; };
 		645122FD154880FD00025F11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645122FC154880FD00025F11 /* UIKit.framework */; };
@@ -75,6 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189C5AAC16AD537900982B6B /* ADMS_Measurement_PhoneGap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMS_Measurement_PhoneGap.h; sourceTree = "<group>"; };
+		189C5AAD16AD537900982B6B /* ADMS_Measurement_PhoneGap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADMS_Measurement_PhoneGap.m; sourceTree = "<group>"; };
+		189C5ABE16AD55C200982B6B /* ADMS_Measurement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMS_Measurement.h; sourceTree = "<group>"; };
+		189C5AC016AD55D400982B6B /* admsAppLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = admsAppLibrary.a; sourceTree = "<group>"; };
 		18FD49BA16762D6A0016F1F7 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib.xcodeproj; sourceTree = CORDOVALIB; };
 		645122F6154880FD00025F11 /* Toura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645122FA154880FD00025F11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,6 +180,7 @@
 				649111921564496100357F2E /* CFNetwork.framework in Frameworks */,
 				649111AA15644CF600357F2E /* libGoogleAnalytics.a in Frameworks */,
 				8378B9D415D0264E00CE4BE4 /* libGoogleAdMobAds.a in Frameworks */,
+				189C5AC116AD55D400982B6B /* admsAppLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +273,7 @@
 		6451231F154880FD00025F11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				189C5AC016AD55D400982B6B /* admsAppLibrary.a */,
 				6451233C154880FD00025F11 /* Capture.bundle */,
 				64512320154880FD00025F11 /* en.lproj */,
 				64512330154880FD00025F11 /* icons */,
@@ -304,6 +311,7 @@
 		64512340154880FD00025F11 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				189C5ABE16AD55C200982B6B /* ADMS_Measurement.h */,
 				645123E41548835400025F11 /* TouraAppDelegate.h */,
 				645123E51548835400025F11 /* TouraAppDelegate.m */,
 				64512344154880FD00025F11 /* MainViewController.h */,
@@ -334,6 +342,8 @@
 				645123D61548834300025F11 /* ChildBrowser.bundle */,
 				645123D71548834300025F11 /* ChildBrowserCommand.h */,
 				645123D91548834300025F11 /* ChildBrowserViewController.h */,
+				189C5AAC16AD537900982B6B /* ADMS_Measurement_PhoneGap.h */,
+				189C5AAD16AD537900982B6B /* ADMS_Measurement_PhoneGap.m */,
 				645123D81548834300025F11 /* ChildBrowserCommand.m */,
 				645123DA1548834300025F11 /* ChildBrowserViewController.m */,
 				645123DB1548834300025F11 /* ChildBrowserViewController.xib */,

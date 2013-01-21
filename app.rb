@@ -145,6 +145,9 @@ module Mulberry
         ad_mob = settings['ad_mob']
         base_config['adMob'] = {'publisherId' => ad_mob['publisher_id']} unless ad_mob.nil?
 
+        omniture = settings['omniture']
+        base_config['omniture'] = {'oid' => omniture['oid']} unless omniture.nil?
+
         settings['base_config'] = JSON.pretty_generate(base_config)
 
         Mustache.render(tmpl, settings)
