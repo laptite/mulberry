@@ -37,7 +37,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.CookieSyncManager;
 
-import org.apache.cordova.api.Plugin;
+import com.phonegap.api.Plugin;
 
 /**
  * Main Facebook object for interacting with the Facebook developer API.
