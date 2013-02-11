@@ -158,6 +158,9 @@
     self.viewController.startPage = @"index.html";
     self.viewController.invokeString = invokeString;
     self.viewController.view.frame = viewBounds;
+    
+    self.window.rootViewController = self.viewController;
+    
     // cache notification, if any, until webview finished loading, then process it if needed
     // assume will not receive another message before webview loaded
     ((MainViewController*)self.viewController).launchNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];

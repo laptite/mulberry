@@ -82,6 +82,16 @@
     return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
 }
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 /* Comment out the block below to over-ride */
 /*
  #pragma CDVCommandDelegate implementation
