@@ -15,11 +15,11 @@ dojo.declare('toura.user.Twitter', null, {
       customerKey : mulberry.app.Config.get('app').twitterCustomerKey,
       customerSecret : mulberry.app.Config.get('app').twitterCustomerSecret
     };
-
+    
     if (config.customerKey && config.customerSecret) {
       this.twitterConfig = config;
       if (mulberry.app.PhoneGap.present) {
-        this.childBrowser = mulberry.app.PhoneGap.browser.getBrowser();
+        // this.childBrowser = mulberry.app.PhoneGap.browser.getBrowser();
       }
     } else {
       this.disabled = true;
