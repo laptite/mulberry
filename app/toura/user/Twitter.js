@@ -18,9 +18,9 @@ dojo.declare('toura.user.Twitter', null, {
     
     if (config.customerKey && config.customerSecret) {
       this.twitterConfig = config;
-      if (mulberry.app.PhoneGap.present) {
-        // this.childBrowser = mulberry.app.PhoneGap.browser.getBrowser();
-      }
+      // if (mulberry.app.PhoneGap.present) {
+      //   this.childBrowser = mulberry.app.PhoneGap.browser.getBrowser();
+      // }
     } else {
       this.disabled = true;
     }
