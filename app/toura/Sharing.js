@@ -50,11 +50,25 @@ toura.Sharing = {
       ].join(' ');
     } else {
       // yay services that don't require short messages
-      // console.log(obj);
-      ret = dojo.string.substitute(defaultTmpl, obj).split(obj.sharingURL) + ' ' + obj.sharingURL;
-      // ret = dojo.string.substitute(defaultTmpl, obj) + ' ' + obj.sharingURL;
+      // ret = dojo.string.substitute(defaultTmpl, obj).split(obj.sharingURL) + ' ' + obj.sharingURL;
       // console.log("ret: " + ret);
       
+      // account for the sharing url
+      consumed += obj.sharingURL.length;
+
+      // truncate the part that comes before the sharing URL
+      ret = dojo.string.substitute(defaultTmpl, obj).split(obj.sharingURL);
+
+      // acount for anything after the sharing URL
+      if (ret[1]) { consumed += ret[1].length; }
+
+      // reassemble the message
+      ret = [
+        ret[0],
+        obj.sharingURL,
+        ret[1] || ''
+      ].join(' ');
+
     }
 
     return ret;
