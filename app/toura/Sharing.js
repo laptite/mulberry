@@ -53,7 +53,7 @@ toura.Sharing = {
       // console.log(obj);
       ret = dojo.string.substitute(defaultTmpl, obj).split(obj.sharingURL) + ' ' + obj.sharingURL;
       // ret = dojo.string.substitute(defaultTmpl, obj) + ' ' + obj.sharingURL;
-      console.log("ret: " + ret);
+      // console.log("ret: " + ret);
       
     }
 
