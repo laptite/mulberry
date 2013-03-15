@@ -34,7 +34,10 @@ mulberry.app.PhoneGap.video = function(pg, device){
   }
   return {
     play: function(url) {
-      window.plugins.videoPlayer.play(url);
+      // window.plugins.videoPlayer.play(url);
+      if ( os == "android" ) {
+        cordova.exec(null, null, "VideoPlayer", "playVideo", [url]);
+      }
     }
   };
 };
