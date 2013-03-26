@@ -28,5 +28,22 @@
     input[type=reset] {
       min-width: 80px;
     }
+
+    p.confirmMessage {
+      text-align:left;
+      float:left;
+      padding-top:10px;
+      margin-left:-15px;
+      opacity:0;
+      -webkit-transition: opacity 0.5s ease-in;
+    }
+
+    .fadeOut {
+      opacity:0;
+    }
+    .fadeIn {
+      opacity:1;
+    }
+
   }
 }

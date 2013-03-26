@@ -14,12 +14,15 @@ dojo.declare('toura.components.SocialMessage', mulberry._Component, {
   prepareData : function() {
     this.messageText = this.messageText || '';
     this.availLength = this.maxLength - this.messageText.length;
+
+    if ( this.name == 'twitter' ) {
+      this.confirmMessageText = 'Tweet sent!';
+    }
   },
 
   setupConnections : function() {
     this.connect(this.submitBtn, 'click', '_onSubmit');
     this.connect(this.cancelBtn, 'click', '_onCancel');
-
     dojo.forEach([this.message, this.username, this.password], dojo.hitch(this, function(node){
       this.connect(node, 'blur', '_onSocialBlur');
     }));
@@ -60,6 +63,15 @@ dojo.declare('toura.components.SocialMessage', mulberry._Component, {
 
     if (!errors.length) {
       this.onSubmit(params);
+      if ( this.name == 'twitter' ) {
+        this.confirmMessage.style.opacity = '1';
+        that = this;
+        setTimeout(
+          function() {that.confirmMessage.style.opacity = '0';},
+          2000
+        );
+      }
+
       return;
     }
 
