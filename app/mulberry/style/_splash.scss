@@ -1,5 +1,6 @@
 #splash {
   $splash-portrait : "../media/load-screens/portrait.png";
+  $splash-portrait-iphone5 : "../media/load-screens/portrait-iphone5.png";  
   $splash-landscape : "../media/load-screens/landscape.png";
   $mobile-web-splash-phone-portrait : "../media/load-screens/phone_portrait.png";
   $mobile-web-splash-phone-landscape : "../media/load-screens/phone_landscape.png";
@@ -22,6 +23,10 @@
 
   @media (orientation:portrait) {
     background-image: url($splash-portrait);
+  }
+
+  @media screen and (device-aspect-ratio: 40/71) {
+    background-image:  url($splash-portrait-iphone5);
   }
 
   &.browser {
