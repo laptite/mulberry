@@ -146,6 +146,14 @@ module Builder
       end
 
       if @target['device_os'] == 'ios' || @is_browser
+        FileUtils.cp_r(
+          File.join(
+            @load_screens[:location],
+            'phone_portrait_iphone5.png'
+          ),
+          File.join(media_load_screens_dir, 'portrait_iphone5.png')
+        ) if is_phone
+        
         project_resources_dir = @is_browser ?
           @www :
           File.join(@project_dir, 'Toura', 'Resources')
